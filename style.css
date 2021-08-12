@@ -1,0 +1,138 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Against\ Myself.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(88, 88, 88);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(background.jpg);
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: #212429;
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 10px 4em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  border: 3px solid #b9a25a;
+  outline: none;
+  width: 70%;
+  height: 45px;
+  margin: 4px 0;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background-color: #bababa;
+  font-family: cursive;
+}
+
+textarea {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin: 4px 0;
+  border: 3px solid #b9a25a;
+  resize: none;
+  outline: none;
+  width: 70%;
+  height: 100px;
+  background-color: #bababa;
+  font-family: cursive;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #b9a25a;
+  color: #2d2d2d;
+  cursor: pointer;
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-family: cursive;
+}
+
+::placeholder {
+  color: #2d2d2d;
+}
+h1,
+h3 {
+  color: #b9a25a;
+  font-family: myFirstFont;
+  font-weight: 100;
+}
+
+h3 {
+  color: #bababa;
+}
+
+.data-wrapper {
+  width: 70%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data-container {
+  background-color: #bababa;
+  color: #2d2d2d;
+  border-left: 25px solid #b9a25a;
+  width: 45%;
+  margin: 10px 10px;
+  padding: 0 17px;
+  box-sizing: border-box;
+  font-family: cursive;
+  line-height: 17px;
+  position: relative;
+}
+
+.data-head {
+  font-weight: 600;
+}
+
+span.delete {
+  position: absolute;
+  left: -20px;
+  top: 40%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  h1,
+  h3 {
+    font-size: 20px;
+  }
+  input,
+  textarea,
+  .data-container,
+  .data-wrapper {
+    width: 100%;
+  }
+  .container {
+    padding: 10px 2em;
+  }
+  button {
+    height: 30px;
+    width: 75px;
+  }
+  input {
+    height: 36px;
+  }
+  p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+}
